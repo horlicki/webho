@@ -12,7 +12,7 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
-        className="absolute inset-0 z-0 opacity-20 animate-slow-pan"
+        className="absolute inset-0 z-0 opacity-60 animate-slow-pan"
         style={{
           backgroundImage: `url(${heroBg})`,
           backgroundSize: '120% auto',
