@@ -142,7 +142,7 @@ export const Experience = () => {
               >
                 <AccordionTrigger className="px-5 py-4 hover:no-underline hover:bg-primary/5">
                   <div className="flex items-start gap-4 w-full text-left">
-                    <div className="flex-shrink-0 mt-1">
+                    <div className="flex-shrink-0">
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                         <Briefcase className="h-5 w-5 text-primary" />
                       </div>
@@ -181,7 +181,7 @@ export const Experience = () => {
                     <ul className="space-y-2">
                       {exp.description.map((item, i) => (
                         <li key={i} className="flex items-start gap-2 text-muted-foreground text-sm">
-                          <span className="text-primary mt-1 flex-shrink-0">•</span>
+                          <span className="text-primary flex-shrink-0">•</span>
                           <span>{item}</span>
                         </li>
                       ))}

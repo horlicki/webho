@@ -161,7 +161,7 @@ export const Projects = () => {
                   <ul className="space-y-2">
                     {selectedProject.recognition.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
+                        <span className="text-primary">•</span>
                         <span className="text-muted-foreground">{item}</span>
                       </li>
                     ))}

@@ -54,7 +54,7 @@ export const Education = () => {
           {education.map((edu, idx) => (
             <div key={idx} className="p-4 border border-border rounded-lg hover:border-primary/50 transition-colors bg-card">
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 mt-1">
+                <div className="flex-shrink-0">
                   <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                     <GraduationCap className="h-4 w-4 text-primary" />
                   </div>
@@ -96,11 +96,11 @@ export const Education = () => {
           <h3 className="text-base font-semibold mb-3">Certifications & Training</h3>
           <ul className="space-y-2">
             <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
+              <span className="text-primary">•</span>
               <span className="text-muted-foreground text-sm">AWS Academy Graduate - AWS Academy Cloud Foundations</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
+              <span className="text-primary">•</span>
               <span className="text-muted-foreground text-sm">Basics of Python Programming - Training for Programmers</span>
             </li>
           </ul>

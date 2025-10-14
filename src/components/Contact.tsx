@@ -16,7 +16,7 @@ export const Contact = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <Mail className="h-5 w-5 text-primary mt-1" />
+                  <Mail className="h-5 w-5 text-primary" />
                   <div className="text-left">
                     <h3 className="font-semibold text-sm mb-1">Email</h3>
                     <a 
@@ -29,7 +29,7 @@ export const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-primary mt-1" />
+                  <MapPin className="h-5 w-5 text-primary" />
                   <div className="text-left">
                     <h3 className="font-semibold text-sm mb-1">Location</h3>
                     <p className="text-muted-foreground text-sm">Kraków, Poland • <span className="text-primary font-medium">Remote</span></p>
@@ -39,7 +39,7 @@ export const Contact = () => {
 
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <Linkedin className="h-5 w-5 text-primary mt-1" />
+                  <Linkedin className="h-5 w-5 text-primary" />
                   <div className="text-left">
                     <h3 className="font-semibold text-sm mb-1">LinkedIn</h3>
                     <a 
@@ -54,7 +54,7 @@ export const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Github className="h-5 w-5 text-primary mt-1" />
+                  <Github className="h-5 w-5 text-primary" />
                   <div className="text-left">
                     <h3 className="font-semibold text-sm mb-1">GitHub</h3>
                     <a 

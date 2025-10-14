@@ -106,7 +106,7 @@ export const Publications = () => {
               {publishedPapers.map((pub, idx) => (
                 <div key={idx} className="p-4 border border-border rounded-lg hover:border-primary/50 transition-colors bg-background/50">
                   <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 mt-1">
+                    <div className="flex-shrink-0">
                       <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                         <FileText className="h-4 w-4 text-primary" />
                       </div>
@@ -143,7 +143,7 @@ export const Publications = () => {
               {underReview.map((pub, idx) => (
                 <div key={idx} className="p-4 border border-border rounded-lg hover:border-primary/50 transition-colors bg-background/50">
                   <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 mt-1">
+                    <div className="flex-shrink-0">
                       <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                         <Clock className="h-4 w-4 text-primary" />
                       </div>
