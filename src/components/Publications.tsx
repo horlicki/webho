@@ -32,6 +32,24 @@ const publishedPapers: Publication[] = [
     link: "https://unloc.uken.krakow.pl/"
   },
   {
+    title: "Diagnosis of Schizophrenia Using Convolutional Neural Networks Based on Multi-Channel EEG Signal",
+    authors: "Sylwia Zemła, Hubert Orlicki, Mateusz Fudala, Julia Polak, Arkadiusz Knapik, Wojciech Książek",
+    venue: "Cutting-Edge Computational Intelligence in Healthcare (Elsevier), 2026",
+    year: "2026",
+    type: "Book Chapter",
+    link: "https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780443330827000267?via%3Dihub",
+    points: "50 pts"
+  },
+  {
+    title: "Interpretable Ensemble Learning for Tumor Type Prediction: A SHAP-based Evaluation of CatBoost and Voting Classifiers",
+    authors: "Weronika Wolak, Anna Plichta, Hubert Orlicki",
+    venue: "Scientific Reports, 2025",
+    year: "2025",
+    type: "Research Paper",
+    link: "https://www.nature.com/articles/s41598-025-31079-x",
+    points: "140 pts"
+  },
+  {
     title: "Prototype of an Original Device – Braille Display",
     authors: "Bartłomiej Szostak, Hubert Orlicki, Tomasz Makowski",
     venue: "New Trends in Scientific Research 6",
@@ -56,13 +74,6 @@ const publishedPapers: Publication[] = [
 
 const underReview: Publication[] = [
   {
-    title: "Diagnosis of Schizophrenia Using Convolutional Neural Networks Based on Multi-Channel EEG Signal",
-    authors: "Sylwia Zemła, Hubert Orlicki, Mateusz Fudala, Julia Polak, Arkadiusz Knapik, Wojciech Książek",
-    venue: "Cutting-Edge Computational Intelligence in Healthcare (Elsevier)",
-    year: "Under Review",
-    type: "Book Chapter"
-  },
-  {
     title: "Bilinear Compressive Security",
     authors: "Axel Flinth (Umeå University), Hubert Orlicki (Cracow University of Technology), Semira Einsele (Freie Universität Berlin), Gerhard Wunder (Freie Universität Berlin)",
     venue: "Research conducted during internship at Umeå University",
@@ -70,11 +81,18 @@ const underReview: Publication[] = [
     type: "Research Paper"
   },
   {
-    title: "Interpretable Ensemble Learning for Tumor Type Prediction: A SHAP-based Evaluation of CatBoost and Voting Classifiers",
-    authors: "Weronika Wolak, Anna Plichta, Hubert Orlicki",
-    venue: "Under Review",
+    title: "Evaluating Semantic Image Editing in Architecture and Urban Studies: A case of Reshaping Architecture of Power",
+    authors: "Julita Sobiczewska, Marcin Kłeczek, Damian Mizera, Zuzanna Czernicka, Julia Malik, Hubert Orlicki, Jacek Złoczowski, Małgorzata Łuczyna, Dominik Filipiak",
+    venue: "International Journal of Architectural Computing",
     year: "Under Review",
-    type: "Research Paper"
+    type: "Journal Article"
+  },
+  {
+    title: "Automatic Muscle Thickness Analysis on Ultrasound Images using Neural Networks with weakly supervised segmentation-based Attention",
+    authors: "Andrzej Brodzicki, Karolina Szczesniak, Hubert Orlicki, Wojciech Książek, Marta Załęska-Kocięcka",
+    venue: "MICCAI 2026",
+    year: "Under Review",
+    type: "Conference Paper"
   }
 ];
 

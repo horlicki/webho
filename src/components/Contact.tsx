@@ -58,12 +58,12 @@ export const Contact = () => {
                   <div className="text-left">
                     <h3 className="font-semibold text-sm mb-1">GitHub</h3>
                     <a 
-                      href="https://github.com/TheOrboy"
+                      href="https://github.com/horlicki"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
-                      github.com/TheOrboy
+                      github.com/horlicki
                     </a>
                   </div>
                 </div>

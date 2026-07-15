@@ -20,7 +20,7 @@ const experiences: ExperienceItem[] = [
   {
     company: "Cracow University of Technology",
     role: "Research & Teaching Assistant",
-    period: "Mar 2025 - Present",
+    period: "Mar 2025 - Oct 2026",
     description: [
       "Conducting research in artificial intelligence and evolutionary computation",
       "Supporting teaching activities, mentoring students and helping with course preparation",
@@ -30,7 +30,7 @@ const experiences: ExperienceItem[] = [
   },
   {
     company: "4PM CONSULTING",
-    role: "Full-Stack Developer",
+    role: "Full-Stack Developer & Maintenance Coordinator",
     period: "Jun 2024 - Present",
     description: [
       "Developed claims reporting platform for major bank using JavaScript, Angular and C#",
@@ -126,7 +126,7 @@ export const Experience = () => {
     <section id="experience" className="py-16 bg-card">
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mb-12 animate-slide-up">
-          <h2 className="mb-4">Professional Experience <span className="text-primary">4.5 Years</span></h2>
+          <h2 className="mb-4">Professional Experience <span className="text-primary">5+ Years</span></h2>
           <p className="text-xl text-muted-foreground">
             Bridging academia and industry with expertise in AI, full-stack development, and research
           </p>
