@@ -7,9 +7,9 @@ export const Contact = () => {
     <section id="contact" className="py-12 bg-card">
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="mb-4">Let's Collaborate</h2>
+          <h2 className="mb-4">Let's Work Together</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Open to research collaborations, industry projects, and innovative opportunities
+            Open to B2B contracts: technical leadership, full-stack development, MarTech implementations and AI agents
           </p>
 
           <Card className="p-6 md:p-8 border-border">
@@ -20,10 +20,10 @@ export const Contact = () => {
                   <div className="text-left">
                     <h3 className="font-semibold text-sm mb-1">Email</h3>
                     <a 
-                      href="mailto:hubert.orlicki@petra-po.pl"
+                      href="mailto:hubert.orlicki.adres@gmail.com"
                       className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
-                      hubert.orlicki@petra-po.pl
+                      hubert.orlicki.adres@gmail.com
                     </a>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ export const Contact = () => {
 
             <div className="mt-6 pt-6 border-t border-border">
               <Button size="default" className="group" asChild>
-                <a href="mailto:hubert.orlicki@petra-po.pl">
+                <a href="mailto:hubert.orlicki.adres@gmail.com">
                   Send Message
                   <Mail className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>

@@ -15,6 +15,15 @@ interface Publication {
 
 const publishedPapers: Publication[] = [
   {
+    title: "Bilinear Compressive Security",
+    authors: "Axel Flinth, Hubert Orlicki, Semira Einsele, Gerhard Wunder",
+    venue: "ICC 2026 - IEEE International Conference on Communications, pp. 1-6",
+    year: "2026",
+    type: "Conference Paper",
+    link: "https://ieeexplore.ieee.org/abstract/document/11587135/",
+    points: "70 pts"
+  },
+  {
     title: "DetPy (Differential Evolution Tools): A Python toolbox for solving optimization problems using differential evolution",
     authors: "Błażej Zieliński, Szymon Ściegienny, Hubert Orlicki, Wojciech Książek",
     venue: "SoftwareX, Volume 29, 2025",
@@ -74,11 +83,12 @@ const publishedPapers: Publication[] = [
 
 const underReview: Publication[] = [
   {
-    title: "Bilinear Compressive Security",
-    authors: "Axel Flinth (Umeå University), Hubert Orlicki (Cracow University of Technology), Semira Einsele (Freie Universität Berlin), Gerhard Wunder (Freie Universität Berlin)",
-    venue: "Research conducted during internship at Umeå University",
-    year: "In Progress",
-    type: "Research Paper"
+    title: "Bilinear Compressive Security with Finitely Many Samples",
+    authors: "Axel Flinth, Semira Einsele, Matilda Kylberg, Hubert Orlicki, Gerhard Wunder",
+    venue: "arXiv preprint arXiv:2610.19898",
+    year: "2026",
+    type: "Preprint",
+    link: "https://arxiv.org/abs/2610.19898"
   },
   {
     title: "Evaluating Semantic Image Editing in Architecture and Urban Studies: A case of Reshaping Architecture of Power",
@@ -96,9 +106,19 @@ const underReview: Publication[] = [
   }
 ];
 
+const yearValue = (pub: Publication) => {
+  const year = parseInt(pub.year, 10);
+  return Number.isNaN(year) ? -Infinity : year;
+};
+
+const byYearDesc = (a: Publication, b: Publication) => yearValue(b) - yearValue(a);
+
+const sortedPublished = [...publishedPapers].sort(byYearDesc);
+const sortedUnderReview = [...underReview].sort(byYearDesc);
+
 export const Publications = () => {
   return (
-    <section id="publications" className="py-12 bg-card">
+    <section id="publications" className="py-12 bg-background">
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mb-8 animate-slide-up">
           <h2 className="mb-4">Publications & Research</h2>
@@ -121,7 +141,7 @@ export const Publications = () => {
             </TabsList>
 
             <TabsContent value="published" className="space-y-3">
-              {publishedPapers.map((pub, idx) => (
+              {sortedPublished.map((pub, idx) => (
                 <div key={idx} className="p-4 border border-border rounded-lg hover:border-primary/50 transition-colors bg-background/50">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
@@ -158,7 +178,7 @@ export const Publications = () => {
             </TabsContent>
 
             <TabsContent value="review" className="space-y-3">
-              {underReview.map((pub, idx) => (
+              {sortedUnderReview.map((pub, idx) => (
                 <div key={idx} className="p-4 border border-border rounded-lg hover:border-primary/50 transition-colors bg-background/50">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0">
@@ -175,7 +195,16 @@ export const Publications = () => {
                       
                       <h3 className="font-semibold text-sm mb-2">{pub.title}</h3>
                       <p className="text-muted-foreground text-xs mb-1">{pub.authors}</p>
-                      <p className="text-muted-foreground text-xs font-medium">{pub.venue}</p>
+                      <p className="text-muted-foreground text-xs font-medium mb-2">{pub.venue}</p>
+
+                      {pub.link && (
+                        <Button variant="outline" size="sm" className="h-7 text-xs" asChild>
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer">
+                            View Publication
+                            <ExternalLink className="ml-1 h-3 w-3" />
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>

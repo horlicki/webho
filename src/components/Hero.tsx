@@ -3,6 +3,8 @@ import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { AnimatedBackground } from "./AnimatedBackground";
 import heroBg from "@/assets/hero-bg.jpg";
 
+const headline = ["Tech Lead", "Full-Stack Developer", "AI Researcher", "MarTech", "AI Automation & Agents"];
+
 export const Hero = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -24,8 +26,13 @@ export const Hero = () => {
       
       <div className="container relative z-10 px-4 py-20 mx-auto">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-            <span className="text-primary text-sm font-medium">AI Researcher • Full-Stack Developer • Innovator</span>
+          <div className="inline-flex flex-wrap justify-center gap-x-2 gap-y-1 mb-4 px-4 py-2 rounded-2xl md:rounded-full bg-primary/10 border border-primary/20">
+            {headline.map((item, idx) => (
+              <span key={item} className="text-primary text-sm font-medium">
+                {idx > 0 && <span className="mr-2 text-primary/50">•</span>}
+                {item}
+              </span>
+            ))}
           </div>
           
           <h1 className="mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground to-primary">
@@ -33,7 +40,7 @@ export const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Bridging <span className="text-primary font-semibold">industry expertise</span> with <span className="text-primary font-semibold">academic research</span> to create technology that makes a real-world impact
+            I lead and build <span className="text-primary font-semibold">MarTech, fintech and AI</span> projects, from architecture and integrations to <span className="text-primary font-semibold">production delivery</span>
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center mb-12">
@@ -50,7 +57,7 @@ export const Hero = () => {
               variant="outline"
               onClick={() => scrollToSection('contact')}
             >
-              Get in Touch
+              Work With Me (B2B)
             </Button>
           </div>
           
@@ -72,7 +79,7 @@ export const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="mailto:hubert.orlicki@petra-po.pl"
+              href="mailto:hubert.orlicki.adres@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-6 w-6" />

@@ -13,7 +13,7 @@ export const Awards = () => {
   const displayedMedia = showAllMedia ? media : media.slice(0, 4);
 
   return (
-    <section id="awards" className="py-16 bg-background">
+    <section id="awards" className="py-16 bg-card">
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mb-12 animate-slide-up">
           <h2 className="mb-4">Recognition & Media</h2>

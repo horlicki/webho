@@ -3,35 +3,47 @@ import { Card } from "@/components/ui/card";
 
 const skillCategories = [
   {
+    title: "AI Engineering & LLMs",
+    skills: ["Claude API", "AI Agents", "Tool Use", "RAG", "ChromaDB", "Prompt Caching", "Context Engineering", "Sentence Transformers"]
+  },
+  {
     title: "AI & Machine Learning",
-    skills: ["TensorFlow", "PyTorch", "Keras", "Scikit-learn", "OpenCV", "YOLO", "Computer Vision", "NLP"]
+    skills: ["TensorFlow", "PyTorch", "Keras", "Scikit-learn", "OpenCV", "YOLO", "Computer Vision", "NLP", "Diffusion Models", "Optuna"]
   },
   {
-    title: "Programming Languages",
-    skills: ["Python", "JavaScript", "TypeScript", "C++", "SQL", "R"]
+    title: "MarTech",
+    skills: ["Synerise", "Jinjava", "Recommendations", "Search Engines", "Marketing Automation", "CRM", "Personalization"]
   },
   {
-    title: "Web Development",
-    skills: ["React", "Node.js", "Next.js", "FastAPI", "PostgreSQL", "MongoDB", "Docker"]
+    title: "Frontend",
+    skills: ["React", "TypeScript", "Redux", "Angular", "JavaScript", "Storybook", "Jest", "Next.js"]
+  },
+  {
+    title: "Backend & Data",
+    skills: ["Python", "C#", "FastAPI", "Node.js", "REST API", "PostgreSQL", "MongoDB", "SQL", "Playwright"]
   },
   {
     title: "Cloud & DevOps",
-    skills: ["AWS", "Azure", "GCP", "Git", "CI/CD", "Kubernetes"]
+    skills: ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Git", "CI/CD", "Railway"]
+  },
+  {
+    title: "Leadership & Delivery",
+    skills: ["Technical Leadership", "Solution Architecture", "System Integration", "Release Management", "Code Review", "Client Communication", "Mentoring"]
   },
   {
     title: "Data Science",
-    skills: ["Pandas", "NumPy", "Matplotlib", "Jupyter", "Data Analysis", "Statistical Modeling"]
+    skills: ["Pandas", "NumPy", "Matplotlib", "Jupyter", "Data Analysis", "Statistical Modeling", "R", "C++"]
   }
 ];
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-12 bg-background">
+    <section id="skills" className="py-12 bg-card">
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mb-8 animate-slide-up">
           <h2 className="mb-4">Skills & Technologies</h2>
           <p className="text-lg text-muted-foreground">
-            A comprehensive toolkit spanning AI, full-stack development, and data science
+            Tech leadership, full-stack development, MarTech and applied AI
           </p>
         </div>
 

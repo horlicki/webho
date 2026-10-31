@@ -33,6 +33,9 @@ import unlocSam from "@/assets/unloc-sam.png";
 import certificateUnloc from "@/assets/awards/certificate-unloc.png";
 import certificateUmea from "@/assets/awards/certificate-umea.png";
 import umeaResearch from "@/assets/umea-research.png";
+import loyaltyAgentTools from "@/assets/loyalty-agent-tools.png";
+import loyaltyAgentReport from "@/assets/loyalty-agent-report.png";
+import loyaltyAgentFeedback from "@/assets/loyalty-agent-feedback.png";
 
 export interface Project {
   id: string;
@@ -52,6 +55,22 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: "loyalty-audit-agent",
+    title: "Loyalty Program Audit Agent",
+    subtitle: "Autonomous LLM Agent with RAG for Loyalty Program Audits - Production Deployment",
+    problem: "A <span class='text-primary'>consultancy designing loyalty programs</span> prepared every client meeting with a <span class='text-primary'>manual pre-sales audit</span> of the prospect's existing program: scraping the website, reading app store and Trustpilot reviews, checking traffic data, benchmarking competitors and writing a <span class='text-primary'>13-section strategic report</span>. Each audit took analysts <span class='text-primary'>hours of repetitive research</span>, quality depended on who wrote it, and insights from previous audits and the company's own methodology were <span class='text-primary'>not reused systematically</span>.",
+    solution: "<span class='text-primary'>Production agentic system</span> built on the <span class='text-primary'>Claude API</span> with a custom tool-use loop. Given a brand name and URL, the agent autonomously plans its research and calls <span class='text-primary'>7 tools</span>: <span class='text-primary'>scrape_page</span> (requests + BeautifulSoup with Playwright fallback for JS-heavy sites, tech-stack fingerprinting), <span class='text-primary'>fetch_sitemap</span>, <span class='text-primary'>fetch_similarweb</span>, <span class='text-primary'>search_web</span>, <span class='text-primary'>fetch_reviews</span> (Trustpilot, App Store, Google Play), <span class='text-primary'>retrieve_knowledge</span> and <span class='text-primary'>save_section</span>, which persists each of the 13 report sections with a confidence level. <span class='text-primary'>RAG layer</span> on ChromaDB with multilingual sentence-transformer embeddings indexes the company playbook, books, case studies (PDF, DOCX, PPTX, EPUB) and every past analysis. <span class='text-primary'>Human-in-the-loop feedback</span>: analysts rate reports per section (thumbs up/down), add strategic notes and edits, and all of it is written back to the vector store, so the <span class='text-primary'>next analysis in the same industry retrieves those lessons</span>. Cost engineering: <span class='text-primary'>prompt caching</span>, <span class='text-primary'>context editing</span> that clears stale scraping results while keeping saved sections, adaptive thinking with configurable effort, and a cheaper model for follow-up chat. <span class='text-primary'>FastAPI backend</span> streams every tool call to the UI over <span class='text-primary'>Server-Sent Events</span>, runs analyses as background jobs that survive page reloads, and exports reports to PDF, Markdown and JSON. Access is restricted with <span class='text-primary'>Google OAuth</span> to the company domain, with per-user history and shared team analyses. Deployed on <span class='text-primary'>Railway</span>.",
+    results: "A full <span class='text-primary'>13/13-section audit generated in about 1.5 minutes</span>, compared with hours of manual research. <span class='text-primary'>Prompt caching serves the vast majority of input tokens from cache</span> (e.g. 81k cached vs. a handful of uncached tokens per run), keeping the cost per analysis low. Every section carries an explicit <span class='text-primary'>confidence label</span>, so analysts see where data was missing instead of reading hallucinated claims. The <span class='text-primary'>feedback loop turns the agent into a growing knowledge base</span> of the company's own reasoning: ratings, notes and edits improve future reports without retraining. <span class='text-primary'>Running in production</span>, used by the consulting team to prepare client meetings, including analyses of large retail brands.",
+    technologies: ["Claude API", "AI Agents", "Tool Use", "RAG", "ChromaDB", "Sentence Transformers", "Prompt Caching", "Context Engineering", "Python", "FastAPI", "Server-Sent Events", "Playwright", "BeautifulSoup", "Google OAuth", "Railway"],
+    image: loyaltyAgentTools,
+    images: [loyaltyAgentTools, loyaltyAgentReport, loyaltyAgentFeedback],
+    recognition: [
+      "Production Deployment",
+      "End-to-End Agent: Tool Use, RAG, Human Feedback Loop",
+      "13-Section Audit in ~1.5 Minutes"
+    ]
+  },
   {
     id: "beebrain",
     title: "BeeBrain",
