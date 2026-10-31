@@ -57,7 +57,7 @@ export const Hero = () => {
               variant="outline"
               onClick={() => scrollToSection('contact')}
             >
-              Work With Me (B2B)
+              Work With Me or Stay in Contact
             </Button>
           </div>
           
