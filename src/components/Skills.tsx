@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 const skillCategories = [
   {
     title: "AI Engineering & LLMs",
-    skills: ["Claude API", "AI Agents", "Tool Use", "RAG", "ChromaDB", "Prompt Caching", "Context Engineering", "Sentence Transformers"]
+    skills: ["Claude API", "AI Agents", "Tool Use", "RAG", "ChromaDB", "Prompt Caching", "Context Engineering", "Sentence Transformers", "Ollama", "Hugging Face"]
   },
   {
     title: "AI & Machine Learning",
@@ -12,7 +12,7 @@ const skillCategories = [
   },
   {
     title: "MarTech",
-    skills: ["Synerise", "Jinjava", "Recommendations", "Search Engines", "Marketing Automation", "CRM", "Personalization"]
+    skills: ["Synerise", "Jinjava", "Recommendations", "Search Engines", "Marketing Automation", "CRM", "CDP", "Personalization", "AI Personalization", "GA4", "Synerise SDK"]
   },
   {
     title: "Frontend",
@@ -24,15 +24,15 @@ const skillCategories = [
   },
   {
     title: "Cloud & DevOps",
-    skills: ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Git", "CI/CD", "Railway"]
+    skills: ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Git", "GitLab", "CI/CD", "Railway"]
   },
   {
     title: "Leadership & Delivery",
-    skills: ["Technical Leadership", "Solution Architecture", "System Integration", "Release Management", "Code Review", "Client Communication", "Mentoring"]
+    skills: ["Technical Leadership", "Solution Architecture", "System Integration", "Release Management", "Code Review", "Sprint Planning", "Task Prioritization", "Client Communication", "Mentoring"]
   },
   {
     title: "Data Science",
-    skills: ["Pandas", "NumPy", "Matplotlib", "Jupyter", "Data Analysis", "Statistical Modeling", "R", "C++"]
+    skills: ["Pandas", "NumPy", "Matplotlib", "Jupyter", "Data Analysis", "Statistical Modeling", "Evolutionary Computation", "R", "C++"]
   }
 ];
 

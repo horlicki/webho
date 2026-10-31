@@ -36,7 +36,7 @@ export const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg" : "bg-transparent"
+        scrolled || isOpen ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -81,7 +81,7 @@ export const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="px-4 py-2 text-sm font-medium text-left text-foreground/80 hover:text-foreground transition-colors"
+                className="px-4 py-3 text-base font-medium text-left text-foreground/80 hover:text-foreground transition-colors"
               >
                 {item.label}
               </button>

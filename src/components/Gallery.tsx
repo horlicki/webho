@@ -139,7 +139,7 @@ export const Gallery = () => {
           )}
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 animate-fade-in">
             {currentItems.map((item, idx) => {
               const Icon = item.icon;
               return (
@@ -153,13 +153,13 @@ export const Gallery = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
                     
                     {/* Content overlay */}
-                    <div className="absolute inset-0 flex flex-col items-center justify-end text-center p-6">
-                      <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full p-3 mb-3">
-                        <Icon className="h-8 w-8 text-primary" />
+                    <div className="absolute inset-0 flex flex-col items-center justify-end text-center p-2 md:p-6">
+                      <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full p-2 md:p-3 mb-2 md:mb-3">
+                        <Icon className="h-5 w-5 md:h-8 md:w-8 text-primary" />
                       </div>
-                      <div className="bg-background/80 backdrop-blur-sm rounded-lg p-4 border border-border/50 w-full">
-                        <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
-                        <p className="text-sm text-muted-foreground">{item.subtitle}</p>
+                      <div className="bg-background/80 backdrop-blur-sm rounded-lg p-2 md:p-4 border border-border/50 w-full">
+                        <h3 className="text-sm md:text-lg font-semibold leading-tight mb-1">{item.title}</h3>
+                        <p className="text-xs md:text-sm text-muted-foreground">{item.subtitle}</p>
                       </div>
                     </div>
                   </div>

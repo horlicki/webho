@@ -12,6 +12,7 @@ import pkLogo from "@/assets/logos/pk.png";
 import ukenLogo from "@/assets/logos/uken.png";
 import comexLogo from "@/assets/logos/comex.svg";
 import fourPmLogo from "@/assets/logos/4pm.png";
+import loyaltyRootsLogo from "@/assets/logos/loyalty-roots.png";
 import deloittePepcoThumb from "@/assets/media/deloitte-pepco.jpg";
 import adactaThumb from "@/assets/media/adacta.png";
 import syneriseOgThumb from "@/assets/media/synerise-og.jpg";
@@ -115,6 +116,28 @@ const experiences: ExperienceItem[] = [
     media: [
       { title: "Adacta AdInsure - insurance software platform", url: "https://www.adacta-fintech.com/", thumbnail: adactaThumb }
     ]
+  },
+  {
+    company: "Loyalty Roots",
+    logo: loyaltyRootsLogo,
+    location: "Kraków · Remote",
+    period: "Nov 2025 - Sep 2026",
+    about: "Loyalty Roots is a consultancy designing and implementing loyalty programs. I owned the technical side of client engagements, from integration architecture on Synerise to building an internal AI agent that automates loyalty program audits.",
+    roles: [
+      {
+        title: "Integration Architect",
+        groups: [
+          {
+            items: [
+              "Led the architecture and implementation of Synerise and loyalty program integrations",
+              "Owned technical decision-making and coordinated delivery with clients and partners",
+              "Designed and built from the ground up an AI agent with a web application that automates loyalty program audits, running in production and used by the consulting team"
+            ]
+          }
+        ]
+      }
+    ],
+    technologies: ["Synerise", "Solution Architecture", "System Integration", "Claude API", "AI Agents", "RAG", "Python", "FastAPI"]
   },
   {
     company: "Cracow University of Technology",

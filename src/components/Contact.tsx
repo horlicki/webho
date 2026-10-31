@@ -9,7 +9,7 @@ export const Contact = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-4">Let's Work Together</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Open to B2B contracts: technical leadership, full-stack development, MarTech implementations and AI agents
+            Open to new projects, collaborations and conversations about tech, AI and research
           </p>
 
           <Card className="p-6 md:p-8 border-border">

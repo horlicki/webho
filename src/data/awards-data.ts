@@ -31,6 +31,11 @@ export interface MediaItem {
 
 export const awards: AwardItem[] = [
   {
+    title: "Main Stage Speaker - Data Science Summit 2026",
+    description: "Presentation on the main stage of Data Science Summit, one of the largest data science and AI conferences in Central and Eastern Europe",
+    year: "2026"
+  },
+  {
     title: "3rd Place - Huawei ICT Competition 2024-2025 Europe",
     description: "Innovation Track - Regional Finals with 3rd Prize Winner recognition",
     year: "2025"

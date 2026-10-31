@@ -103,6 +103,18 @@ export const Education = () => {
               <span className="text-primary">•</span>
               <span className="text-muted-foreground text-sm">Basics of Python Programming - Training for Programmers</span>
             </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary">•</span>
+              <span className="text-muted-foreground text-sm">Using AI in Business Development - Google</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary">•</span>
+              <span className="text-muted-foreground text-sm">Synerise - all 18 platform certifications, including Jinjava Master and AI Recommendations Master</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary">•</span>
+              <span className="text-muted-foreground text-sm">Pedagogical Course for Academic Teachers - Cracow University of Technology</span>
+            </li>
           </ul>
         </div>
       </div>
