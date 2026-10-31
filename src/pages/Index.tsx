@@ -9,24 +9,26 @@ import { Publications } from "@/components/Publications";
 import { Awards } from "@/components/Awards";
 import { Gallery } from "@/components/Gallery";
 import { Contact } from "@/components/Contact";
+import { LinkedInCard } from "@/components/LinkedInCard";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <Projects />
       <About />
-      <Awards />
       <Experience />
-      <Education />
-      <Publications />
-      <Gallery />
+      <Projects />
       <Skills />
+      <Publications />
+      <Awards />
+      <Education />
+      <Gallery />
+      <LinkedInCard />
       <Contact />
       
       <footer className="py-8 text-center text-muted-foreground border-t border-border">
-        <p>© 2025 Hubert Orlicki. All rights reserved.</p>
+        <p>© 2026 Hubert Orlicki. All rights reserved.</p>
       </footer>
     </div>
   );
